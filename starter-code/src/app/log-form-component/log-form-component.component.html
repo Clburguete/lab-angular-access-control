@@ -1,0 +1,10 @@
+<form (ngSubmit)="submitForm(myForm)" #myForm="ngForm" novalidate>
+    <p> Username
+      <input type="text"  name="person" #myPerson="ngModel" [(ngModel)]="person" required />
+    </p>
+    <p> Message
+      <input type="message" name="message" [(ngModel)]="message" #myMessage="ngModel" required />
+    </p>
+    <button type="submit"> signup </button>
+  </form>
+  <p *ngIf = 'answer.length > 0'>{{answer}}</p>
